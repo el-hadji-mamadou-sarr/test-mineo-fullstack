@@ -1,0 +1,12 @@
+
+body{
+        margin-left: 10%;
+        margin-right: 10%;
+}
+
+.content{
+        background-color: gray;
+        padding: 3%;
+        border-radius: 5px;
+}
+
