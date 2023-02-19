@@ -11,13 +11,25 @@ $pyramide = "";
 $etage = 1;
 
 /* Fonction pour afficher la base en fonction de l'étage
-par exemple si base = 4 affiche => XXXX 
+par exemple si base = 4 affiche => X X X X 
 */
-function base($etage)
+function base($etage, $hauteur)
 {
+
         $base = "";
+        $diff = $hauteur - $etage;
+        $marge = "";
+        $espace = "&nbsp" . "&nbsp" . "&nbsp";
+
+        /* Pour chaque étage on calcul la marge à gauche pour décaler les éléments*/
+        for ($i = 0; $i < $diff; $i++) {
+                $marge = $marge . $espace;
+        }
+
+        /* Puis on ajoute la marge à la base*/
+        $base = $base . $marge;
         for ($i = 0; $i < $etage; $i++) {
-                $base = $base . "❌";
+                $base = $base . "❌" . "&nbsp";
         }
         return $base;
 }
@@ -29,7 +41,7 @@ if ($nombre = 0) {
         /* Tant qu'on a pas atteint la hauteur désirée on continue à afficher la base */
 } else {
         while ($etage <= $hauteur) {
-                $pyramide = $pyramide . base($etage) . "<br>";
+                $pyramide = $pyramide . base($etage, $hauteur) . "<br>";
                 $etage++;
         }
 
