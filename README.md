@@ -1,7 +1,11 @@
-# Test-mineo-fullstack
+# Test-mineo
 Test php jquerry ajax html et bootstrap
 
-## Execution en local
+## Test front
+
+- dans le dossier test-front-mineo
+
+## Test full stack
 - Sur visual studio code ouvir le live server ce qui détectera automatiquement le fichier `index.html`
 - Si vous avez un server local mettez le dossier server dans le répertoire de votre server oubien changer l'url du serveur 
  ```php 
