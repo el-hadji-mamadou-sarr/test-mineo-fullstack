@@ -19,7 +19,7 @@
                 $("form").submit(function(event){
                     event.preventDefault();
                     var nombre = $("#nombre").val();
-                    var message = `<p>Pyramide généré avec success !</p>`
+                    var message = `<p>Pyramide générée avec success !</p>`
                     /* Si le nombre existe on envoie une requéte vers le server pour exécuter le script php */
                     if(nombre){
                         $.ajax({
